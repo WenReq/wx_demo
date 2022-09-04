@@ -27,11 +27,9 @@
 
 1. app.json（`pages`所有页面路径、`window`窗口外观、`style`界面表现、底部`tab`等）
 2. project.config.json 用来记录我们**对小程序开发工具所做的个性化配置**。
-
   - `setting` 中保存了**编译**相关的配置
   - `projectname` 中保存的是**项目名称**
   - `appid` 中保存的是小程序的**账号 ID**
-
 3. sitemap.json 文件。
 
   微信现在已开放**小程序内搜索**，效果类似于 PC 网页的 SEO。sitemap.json 文件用来**配置小程序页面是否允许微信索引**。
