@@ -41,26 +41,3 @@
 4. 页面 .json 配置文件
 
   小程序中的每一个页面，可以使用 .json 文件来对本页面的窗口外观进行配置，**页面中的配置项会覆盖 app.json 的 window 中相同的配置项。**
-  
-  
-.
-├── README.md
-├── app.js
-├── app.json
-├── app.wxss
-├── pages
-│   ├── index
-│   │   ├── index.js
-│   │   ├── index.json
-│   │   ├── index.wxml
-│   │   └── index.wxss
-│   └── logs
-│       ├── logs.js
-│       ├── logs.json
-│       ├── logs.wxml
-│       └── logs.wxss
-├── project.config.json
-├── project.private.config.json
-├── sitemap.json
-└── utils
-    └── util.js
