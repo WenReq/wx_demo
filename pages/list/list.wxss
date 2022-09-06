@@ -1,1 +1,14 @@
 /* pages/list/list.wxss */
+.scroll-view-item {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.demo-text-1 {
+  background-color: lightblue;
+}
+.demo-text-2 {
+  background-color: lightcoral;
+}
+.demo-text-3 {
+  background-color: lightgoldenrodyellow;
+}

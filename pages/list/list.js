@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    info: 'init data',
+    msgList: [{msg: 'hello'}, {msg: 'world'}],
+    imgSrc: 'http://www.itheima.com/images/logo.png',
+    randomNum: Math.random() * 10, // 生成10以内的随机数
+    randomNum1: Math.random().toFixed(2),
   },
 
   /**

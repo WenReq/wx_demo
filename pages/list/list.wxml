@@ -1,2 +1,42 @@
 <!--pages/list/list.wxml-->
 <text>pages/list/list.wxml</text>
+
+<button>按钮</button>
+<button type="default">默认色按钮</button>
+<button type="primary">主题色按钮</button>
+<button type="warn">警告按钮</button>
+<button size="mini">小尺寸按钮</button>
+<button size="mini" type="primary">小尺寸主题色按钮</button>
+<button size="default">默认尺寸按钮</button>
+
+<!-- scaleToFill  缩放模式，不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素 -->
+<!-- aspectFit  缩放模式，保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。 -->
+<!-- aspectFill  缩放模式，保持纵横比缩放图片，只保证图片的短边能完全显示出来。也就是说，图片通常只在水平或垂直方向是完整的，另一个方向将会发生截取。 -->
+<!-- widthFix 缩放模式，宽度不变，高度自动变化，保持原图宽高比不变 -->
+<!-- heightFix	缩放模式，高度不变，宽度自动变化，保持原图宽高比不变 -->
+<!-- show-menu-by-longpress 长按图片显示发送给朋友、收藏、保存图片、搜一搜、打开名片/前往群聊/打开小程序（若图片中包含对应二维码或小程序码）的菜单。 -->
+<!-- lazy-load  图片懒加载，在即将进入一定范围（上下三屏）时才开始加载 -->
+<image src="../../images/职业.jpeg" mode="aspectFill"></image>
+<view>
+  <scroll-view scroll-y="true" style="height: 100rpx;">
+    <view class="scroll-view-item demo-text-1">
+      wenshaochang
+    </view>
+    <view class="scroll-view-item demo-text-2">
+      wenshaochang
+    </view>
+    <view class="scroll-view-item demo-text-3">
+      wenshaochang
+    </view>
+  </scroll-view>
+</view>
+
+<!-- 插值变量 -->
+<view>{{ info }}</view>
+<!-- 列表渲染 wx:for -->
+<view wx:for="{{msgList}}" wx:key="unique">{{index}}：{{ item.msg }}</view>
+<!-- 动态绑定属性 -->
+<image src="{{imgSrc}}" mode="widthFix"></image>
+<!-- 三元运算 -->
+<view>{{ randomNum >= 5 ? '随机数字大于或等于5' : '随机数小于5' }}</view>
+<view>{{ randomNum1 * 100 }}</view>

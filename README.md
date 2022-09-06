@@ -143,8 +143,8 @@ WXSS(WeiXin Style Sheets)是一套**样式语言**，用于描述 WXML 的组件
 
   **小程序中的组件也是有宿主环境提供的**，开发者可以基于组件快速搭建出漂亮的页面结构。官方把小程序的组件分为 9 大类，分别是：
 
-    - 试图容器（view）
-    - 基础内容
+    - 试图容器（view、text、scroll-view、swiper、swiper-item）
+    - 基础内容（button、image）
     - 表单组件
     - 导航组件
     - 媒体组件
@@ -196,3 +196,64 @@ WXSS(WeiXin Style Sheets)是一套**样式语言**，用于描述 WXML 的组件
 5. 能够知道小程序如何进行协同开发和发布
 
   - 成员管理、发布小程序、查看运营数据
+
+# 02. 模版与配置
+
+## WXML 模版语法
+
+### 数据绑定
+
+```js
+Page({
+  data: {
+    info: 'init data',
+    msgList: [{msg: 'hello', {msg: 'world'}}],
+    imgSrc: 'http://www.itheima.com/images/logo.png',
+    randomNum: Math.random() * 10, // 生成10以内的随机数
+  }
+})
+```
+
+```html
+<!-- 插值变量 -->
+<view>{{ info }}</view>
+<!-- 列表渲染 wx:for -->
+<view wx:for="{{msgList}}" wx:key="unique">{{index}}：{{ item.msg }}</view>
+<!-- 动态绑定属性 -->
+<image src="{{imgSrc}}" mode="widthFix"></image>
+<!-- 三元运算 -->
+<view>{{ randomNum >= 5 ? '随机数字大于或等于5' : '随机数小于5' }}</view>
+<view>{{ randomNum1 * 100 }}</view>
+```
+
+### 事件绑定
+
+事件是渲染层到逻辑层的通讯方式。通过事件可以将用户在渲染层产生的行为，反馈到逻辑层进行业务的处理。
+
+- `tap`: `bindtap` 或 `bind:tap`。手指触摸后马上离开，类似于 `click` 事件。
+- `input`: `bindinput` 或 `bind:input`。文本框的输入事件。
+- `change`: `bingchange` 或 `bind:change`。状态改变时触发。
+
+事件对象的属性列表
+
+当事件回调触发的时候，会收到一个事件对象 event。它的详情属性如下表所示：
+
+属性|类型|说明
+--- | :--: | ---:
+type|String|事件类型
+timeStamp|Integer|页面打开到触发事件所经历的毫秒数
+target|Object|触发事件的组件的一些属性值集合
+currentTarget|Object|当前组件的一些属性值集合
+detail|Object|额外的信息
+touches|Array|触摸事件，当前停留在屏幕中的触摸点信息的数组
+changedTouches|Array|触摸事件，当前变化的触摸点信息的数组
+
+## WXSS 模版样式
+
+## 全局配置
+
+## 页面配置
+
+## 网络数据请求
+
+## 案例 - 本地生活（首页）
