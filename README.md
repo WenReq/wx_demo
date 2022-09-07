@@ -242,11 +242,19 @@ Page({
 --- | :--: | ---:
 type|String|事件类型
 timeStamp|Integer|页面打开到触发事件所经历的毫秒数
-target|Object|触发事件的组件的一些属性值集合
+`target`|Object|触发事件的组件的一些属性值集合
 currentTarget|Object|当前组件的一些属性值集合
-detail|Object|额外的信息
+`detail`|Object|额外的信息
 touches|Array|触摸事件，当前停留在屏幕中的触摸点信息的数组
 changedTouches|Array|触摸事件，当前变化的触摸点信息的数组
+
+`target` 是触发该事件的源头组件，`currentTarget` 则是当前事件所绑定的组件。
+
+`this.setData(dataObject)` 方法，可以给页面 data 中的数据重新赋值。
+
+```
+
+```
 
 ## WXSS 模版样式
 

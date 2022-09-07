@@ -1,7 +1,5 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
-
-<button>按钮</button>
+<button bindtap="btnTapHandler">按钮</button>
 <button type="default">默认色按钮</button>
 <button type="primary">主题色按钮</button>
 <button type="warn">警告按钮</button>
