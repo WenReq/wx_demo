@@ -5,15 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
+    count: 0,
     info: 'init data',
     msgList: [{msg: 'hello'}, {msg: 'world'}],
     imgSrc: 'http://www.itheima.com/images/logo.png',
     randomNum: Math.random() * 10, // 生成10以内的随机数
     randomNum1: Math.random().toFixed(2),
+    msg: '你好，'
   },
-
-  btnTapHandler(e) {
-    console.log(e);
+  // 事件参数
+  btnTapHandler(e) { // 按钮的 tap 事件处理函数
+    console.log(e); // 事件参数对象 e
+  },
+  // 事件给数据赋值
+  changeCount() {
+    this.setData({
+      count: this.data.count + 1
+    })
+  },
+  // 事件传参
+  btnHandler(e) {
+    console.log(e.target.dataset.info)
+    this.setData({
+      count: this.data.count + e.target.dataset.info
+    })
+  },
+  // input 事件
+  inputHandler(e) {
+    console.log(e.detail.value)
+  },
+  // 文本框内容改变的事件
+  iptHandler(e) {
+    this.setData({
+      // 通过 e.detail.value 获取到文本框最新的值
+      msg: e.detail.value
+    })
   },
 
   /**

@@ -12,3 +12,9 @@
 .demo-text-3 {
   background-color: lightgoldenrodyellow;
 }
+input {
+  border: 1px solid #eee;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+}

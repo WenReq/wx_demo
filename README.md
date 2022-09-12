@@ -250,11 +250,41 @@ changedTouches|Array|触摸事件，当前变化的触摸点信息的数组
 
 `target` 是触发该事件的源头组件，`currentTarget` 则是当前事件所绑定的组件。
 
-`this.setData(dataObject)` 方法，可以给页面 data 中的数据重新赋值。
+`this.setData(dataObject)` 方法，可以给页面 data 中的数据重新**赋值**。
 
 ```
-
+Page({
+  data: {
+    count: 0
+  },
+  changeCount() {
+    this.setData({
+      count: this.data.count + 1
+    })
+  },
+})
 ```
+
+#### 事件传参
+
+小程序中的事件传参比较特殊，**不能**在绑定事件的同时为事件处理函数传递参数。
+
+可以为组件提供 `data-*` 自定义属性传参，其中 * 代表的是参数的名字。
+
+```html
+<button bindtap="btnHandler" data-info="{{2}}">事件传参</button>
+```
+
+- info 会被解析为参数名字
+- 数值 2 会被解析为参数的值
+
+`event.target.dataset.info` 获取传递过来的参数。
+
+#### bindinput 的语法格式
+
+通过 `bindinput` 可以为文本框绑定输入事件：`<input bindinput="inputHandler"></input>`
+
+`event.detail.value` 是变化后，文本框最新的值。
 
 ## WXSS 模版样式
 

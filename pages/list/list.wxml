@@ -1,6 +1,6 @@
 <!--pages/list/list.wxml-->
 <button bindtap="btnTapHandler">按钮</button>
-<button type="default">默认色按钮</button>
+<button type="default" bindtap="changeCount">+1{{count}}</button>
 <button type="primary">主题色按钮</button>
 <button type="warn">警告按钮</button>
 <button size="mini">小尺寸按钮</button>
@@ -38,3 +38,9 @@
 <!-- 三元运算 -->
 <view>{{ randomNum >= 5 ? '随机数字大于或等于5' : '随机数小于5' }}</view>
 <view>{{ randomNum1 * 100 }}</view>
+
+<!-- <button bindtap="btnHandler" data-info="2">字符串事件传参</button> -->
+<button bindtap="btnHandler" data-info="{{2}}">事件传参</button>
+
+<input bindinput="inputHandler" placeholder="请输入"></input>
+<input value="{{msg}}" bindinput="iptHandler"/>
