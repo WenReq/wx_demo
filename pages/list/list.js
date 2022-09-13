@@ -11,7 +11,15 @@ Page({
     imgSrc: 'http://www.itheima.com/images/logo.png',
     randomNum: Math.random() * 10, // 生成10以内的随机数
     randomNum1: Math.random().toFixed(2),
-    msg: '你好，'
+    msg: '你好，',
+    type: 0,
+    condition: false,
+    array: ['zs', 'ls'],
+    userlist: [
+      { id: 1, name: '小红' },
+      { id: 2, name: '小黄' },
+      { id: 3, name: '小白' },
+    ],
   },
   // 事件参数
   btnTapHandler(e) { // 按钮的 tap 事件处理函数

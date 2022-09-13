@@ -44,3 +44,26 @@
 
 <input bindinput="inputHandler" placeholder="请输入"></input>
 <input value="{{msg}}" bindinput="iptHandler"/>
+
+<!-- 条件渲染 -->
+<view wx:if="{{type === 0}}">男</view>
+<view wx:elif="{{type ===1}}">女</view>
+<view wx:else>保密</view>
+
+<block wx:if="{{true}}">
+  <view>view1</view>
+  <view>view2</view>
+</block>
+
+<view hidden="{{condition}}">条件为 true 隐藏，条件为 false 显示</view>
+
+<!-- 列表渲染 -->
+<view wx:for="{{array}}" wx:key="index">
+  索引是：{{index}} 当前项是：{{item}}
+</view>
+
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx">
+  索引是：{{idx}} 当前项是：{{itemName}}
+</view>
+<!-- wx:key -->
+<view wx:for="{{userlist}}" wx:key="id">{{item.name}}</view>
