@@ -1,3 +1,5 @@
+@import "/common/common.wxss";
+
 /* pages/list/list.wxss */
 .scroll-view-item {
   height: 100rpx;
@@ -17,4 +19,8 @@ input {
   padding: 5px;
   margin: 5px;
   border-radius: 3px;
+}
+
+view {
+  background-color: #fff;
 }

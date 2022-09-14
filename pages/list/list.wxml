@@ -66,4 +66,4 @@
   索引是：{{idx}} 当前项是：{{itemName}}
 </view>
 <!-- wx:key -->
-<view wx:for="{{userlist}}" wx:key="id">{{item.name}}</view>
+<view wx:for="{{userlist}}" wx:key="id" class="userinfo">{{item.name}}</view>
