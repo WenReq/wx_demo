@@ -1,14 +1,32 @@
 {
   "pages":[
-    "pages/list/list",
     "pages/index/index",
+    "pages/list/list",
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "精进技术-小程序",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index",
+        "iconPath": "/images/tabs/tabbar.png",
+        "selectedIconPath": "/images/tabs/tabbar-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "logs",
+        "iconPath": "/images/tabs/tabbarhome.png",
+        "selectedIconPath": "/images/tabs/tabbarhome-active.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
