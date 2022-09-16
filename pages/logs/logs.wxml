@@ -1,4 +1,10 @@
 <!--logs.wxml-->
+
+<!-- 如果只是后退到上一页面，则可省略 delta 属性，因为其默认值就是 1。 -->
+<!-- <navigator open-type="navigateBack" delta="1">后退</navigator> -->
+<navigator open-type="navigateBack">声明式后退</navigator>
+<button bindtap="gotoBack">编程式后退</button>
+
 <view class="container log-list">
   <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log.date}}</text>

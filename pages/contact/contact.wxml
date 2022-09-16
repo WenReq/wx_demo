@@ -1,2 +1,12 @@
 <!--pages/contact/contact.wxml-->
-<text>pages/contact/contact.wxml</text>
+<!-- 声明式导航到 tabBar 页面 -->
+<navigator url="/pages/message/message" open-type="switchTab">导航到消息页面</navigator>
+<!-- 声明式导航到非 tabBar 页面 -->
+<!-- <navigator url="/pages/logs/logs" open-type="navigate">导航到日志页面</navigator> -->
+<!-- 在导航到非 tabBar 页面时吗，open-type="navigate" 属性可以省略 -->
+<navigator url="/pages/logs/logs">导航到日志页面</navigator>
+
+<!-- 编程式跳转 tabBar 页面 -->
+<button bindtap="gotoMessage">跳转到消息页面</button>
+<!-- 编程式跳转非 tabBar 页面 -->
+<button bindtap="gotoLog">跳转到日志页面</button>

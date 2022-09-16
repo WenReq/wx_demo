@@ -2,7 +2,8 @@
   "pages":[
     "pages/home/home",
     "pages/message/message",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/logs/logs"
   ],
   "window":{
     "navigationBarBackgroundColor": "#2b4b6b",
@@ -17,14 +18,14 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "/images/tabs/tabbar.png",
-        "selectedIconPath": "/images/tabs/tabbar-active.png"
+        "iconPath": "/images/tabs/tabbarhome.png",
+        "selectedIconPath": "/images/tabs/tabbarhome-active.png"
       },
       {
         "pagePath": "pages/message/message",
         "text": "消息",
-        "iconPath": "/images/tabs/tabbarhome.png",
-        "selectedIconPath": "/images/tabs/tabbarhome-active.png"
+        "iconPath": "/images/tabs/tabbar.png",
+        "selectedIconPath": "/images/tabs/tabbar-active.png"
       },
       {
         "pagePath": "pages/contact/contact",
