@@ -49,12 +49,41 @@ Page({
       msg: e.detail.value
     })
   },
+  // 发起 get 请求
+  handlerGet() {
+    wx.request({
+      url: 'https://www.escook.cn/api/get',
+      method: 'GET',
+      data: {
+        name: 'zs',
+        age: 28
+      },
+      success: (res) => {
+        console.log(res.data)
+      }
+    })
+  },
+  // 发起 post 请求
+  handlerPost() {
+    wx.request({
+      url: 'https://www.escook.cn/api/post',
+      method: 'POST',
+      data: {
+        name: 'ls',
+        gender: '男'
+      },
+      success: (res) => {
+        console.log(res.data)
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.handlerGet()
+    this.handlerPost()
   },
 
   /**

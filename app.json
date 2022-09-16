@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/list/list",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/message/message",
+    "pages/contact/contact"
   ],
   "window":{
     "navigationBarBackgroundColor": "#2b4b6b",
-    "navigationBarTitleText": "精进技术-小程序",
+    "navigationBarTitleText": "精进技术",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#efefef",
     "backgroundTextStyle": "dark",
@@ -15,16 +15,22 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "index",
+        "pagePath": "pages/home/home",
+        "text": "首页",
         "iconPath": "/images/tabs/tabbar.png",
         "selectedIconPath": "/images/tabs/tabbar-active.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "logs",
+        "pagePath": "pages/message/message",
+        "text": "消息",
         "iconPath": "/images/tabs/tabbarhome.png",
         "selectedIconPath": "/images/tabs/tabbarhome-active.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "/images/tabs/contact.png",
+        "selectedIconPath": "/images/tabs/contact-active.png"
       }
     ]
   },
