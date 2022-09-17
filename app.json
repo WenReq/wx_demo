@@ -3,7 +3,9 @@
     "pages/home/home",
     "pages/message/message",
     "pages/contact/contact",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/event/event",
+    "pages/shoplist/shoplist"
   ],
   "window":{
     "navigationBarBackgroundColor": "#2b4b6b",
@@ -36,5 +38,8 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "my-test2": "/components/test/test"
+  }
 }

@@ -1,12 +1,19 @@
 <!--pages/contact/contact.wxml-->
 <!-- 声明式导航到 tabBar 页面 -->
-<navigator url="/pages/message/message" open-type="switchTab">导航到消息页面</navigator>
+<navigator url="/pages/message/message" open-type="switchTab">声明式-导航到消息页面</navigator>
 <!-- 声明式导航到非 tabBar 页面 -->
 <!-- <navigator url="/pages/logs/logs" open-type="navigate">导航到日志页面</navigator> -->
 <!-- 在导航到非 tabBar 页面时吗，open-type="navigate" 属性可以省略 -->
-<navigator url="/pages/logs/logs">导航到日志页面</navigator>
+<navigator url="/pages/logs/logs">声明式-导航到日志页面</navigator>
 
 <!-- 编程式跳转 tabBar 页面 -->
-<button bindtap="gotoMessage">跳转到消息页面</button>
+<button bindtap="gotoMessage">编程式-跳转到消息页面</button>
 <!-- 编程式跳转非 tabBar 页面 -->
-<button bindtap="gotoLog">跳转到日志页面</button>
+<button bindtap="gotoLog">编程式-跳转到日志页面</button>
+
+<!-- 声明式传参 -->
+<navigator url="/pages/logs/logs?name=zs&age=28">声明式传参-导航到日志页面</navigator>
+<!-- 编程式传参 -->
+<button bindtap="gotoLog2">编程式导航传参-跳转到日志页面</button>
+
+<navigator url="/pages/event/event">声明组件-跳转到事件页面</navigator>

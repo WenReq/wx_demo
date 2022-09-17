@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "my-test1": "/components/test/test"
+  },
   "backgroundColor": "#ffffff"
 }

@@ -5,6 +5,8 @@
 <navigator open-type="navigateBack">声明式后退</navigator>
 <button bindtap="gotoBack">编程式后退</button>
 
+<view>count的值是：{{count}}</view>
+
 <view class="container log-list">
   <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log.date}}</text>

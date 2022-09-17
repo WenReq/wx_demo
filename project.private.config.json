@@ -4,5 +4,32 @@
   "setting": {
     "compileHotReLoad": true,
     "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "event",
+          "pathName": "pages/event/event",
+          "query": "name=zs&age=28",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/message/message",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "list",
+          "pathName": "pages/shoplist/shoplist",
+          "query": "id=1&title=美食",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }
