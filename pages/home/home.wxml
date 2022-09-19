@@ -14,4 +14,6 @@
   </navigator>
 </view>
 
+<view class="g-red-text">app.wxss中定义的样式</view>
+
 <my-test1></my-test1>

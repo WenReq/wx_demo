@@ -1,2 +1,4 @@
 <!--components/test/test.wxml-->
-<text>components/test/test.wxml</text>
+<text class="g-red-text">components/test/test.wxml</text>
+
+<button bindtap="addCount">+1</button>
