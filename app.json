@@ -37,9 +37,10 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "my-test2": "/components/test/test"
+    "my-test2": "/components/test/test",
+    "van-button": "vant-weapp/button",
+    "my-numbers": "./components/numbers/numbers"
   }
 }

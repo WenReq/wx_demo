@@ -1,6 +1,5 @@
 // pages/home/home.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -15,6 +14,15 @@ Page({
   onLoad(options) {
     this.getSwiperList()
     this.getGridList()
+  },
+
+  async getInfo() {
+    const {data: res} = await wx.p.request({
+      method: 'GET',
+      url: 'https://www.escook.cn/api/get',
+      data: { name: 'zs', age: 28 }
+    })
+    console.log(res)
   },
 
   // 获取轮播图数据

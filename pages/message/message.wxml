@@ -13,3 +13,14 @@
 
 <wxs src="../../utils/tools.wxs" module="m2"></wxs>
 <my-test2></my-test2>
+
+<view>{{numA}} + {{numB}} = {{sum}}</view>
+<van-button type="primary" bindtap="btnHandler1" data-step="{{1}}">
+  num + 1
+</van-button>
+<van-button type="primary" bindtap="btnHandler1" data-step="{{-1}}">
+  num - 1
+</van-button>
+
+<view>~~~~~~~~~~</view>
+<my-numbers></my-numbers>

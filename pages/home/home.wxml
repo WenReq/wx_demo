@@ -17,3 +17,6 @@
 <view class="g-red-text">app.wxss中定义的样式</view>
 
 <my-test1></my-test1>
+
+<van-button type="primary" bindtap="getInfo">按钮</van-button>
+<van-button type="danger">按钮</van-button>
