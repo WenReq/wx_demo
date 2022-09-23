@@ -7,6 +7,29 @@
     "pages/event/event",
     "pages/shoplist/shoplist"
   ],
+  "preloadRule": {
+    "pages/contact/contact": {
+      "packages": ["p2"],
+      "network": "all"
+    }
+  },
+  "subPackages": [
+    {
+      "root": "pkgA",
+      "pages": [
+        "pages/cat/cat",
+        "pages/dog/dog"
+      ]
+    },
+    {
+      "root": "pkgB",
+      "name": "p2",
+      "pages": [
+        "pages/apple/apple"
+      ],
+      "independent": true
+    }
+  ],
   "window":{
     "navigationBarBackgroundColor": "#2b4b6b",
     "navigationBarTitleText": "精进技术",
