@@ -1,15 +1,18 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/message/message",
     "pages/contact/contact",
     "pages/logs/logs",
     "pages/event/event",
-    "pages/shoplist/shoplist"
+    "pages/shoplist/shoplist",
+    "custom-tab-bar/index"
   ],
   "preloadRule": {
     "pages/contact/contact": {
-      "packages": ["p2"],
+      "packages": [
+        "p2"
+      ],
       "network": "all"
     }
   },
@@ -30,7 +33,7 @@
       "independent": true
     }
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#2b4b6b",
     "navigationBarTitleText": "精进技术",
     "navigationBarTextStyle": "white",
@@ -39,6 +42,10 @@
     "onReachBottomDistance": 50
   },
   "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -64,6 +71,8 @@
   "usingComponents": {
     "my-test2": "/components/test/test",
     "van-button": "vant-weapp/button",
-    "my-numbers": "./components/numbers/numbers"
+    "my-numbers": "./components/numbers/numbers",
+    "van-tabbar": "vant-weapp/tabbar/index",
+    "van-tabbar-item": "vant-weapp/tabbar-item/index"
   }
 }
